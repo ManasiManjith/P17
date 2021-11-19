@@ -220,22 +220,14 @@ function redCyclists(){
   function reset(){
     gameState = PLAY;
     gameOver.visible = false;
-    mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
+    mainCyclist.changeAnimation("SahilRunning",mainRacerImg1);
       
     pinkCG.destroyEach();
     yellowCG.destroyEach();
     redCG.destroyEach();
       
-    distance = 50;
+
   
-  
-    gameState = END;
-    gameOver.visible = true;
-    mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
-    
-    pinkCG.destroyEach();
-    yellowCG.destroyEach();
-    redCG.destroyEach();
     
     distance = 0;
   }
